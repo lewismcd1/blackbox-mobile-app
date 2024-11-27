@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>My BlackBox</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h4>Welcome to your blackbox</h4>
+
+<ion-card padding>
+    <ion-card-header>Date and Time</ion-card-header>
+    <date-time></date-time>
+  </ion-card>
+<button ion-button (click)="startTrack()" *ngIf="!isRunning">START</button><button ion-button (click)="stopTrack()" *ngIf="isRunning">STOP</button>
+<ion-card padding *ngIf="isRunning">
+  <ion-card-header>GPS Location</ion-card-header>
+  <gps-location></gps-location>
+</ion-card>
+
+<ion-card padding *ngIf="isRunning">
+  <ion-card-header>Device Motion</ion-card-header>
+  <device-motion></device-motion>
+</ion-card>
+</ion-content>

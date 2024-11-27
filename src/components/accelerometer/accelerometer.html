@@ -1,0 +1,16 @@
+<!-- Generated template for the AccelerometerComponent component -->
+<div>
+  <p>{{ acceleration?.x }} {{ acceleration?.y }} {{ acceleration?.z }}</p>
+  <div *ngIf="spike"> 
+    <span> Spike!!! {{ spike}}</span>
+    <div *ngIf="accelerateHashly">
+      Accelerate harshly
+    </div>
+    <div *ngIf="!accelerateHashly">
+      Break harshly
+    </div>
+  </div>
+  <div *ngIf="cornering">
+    Cornering
+  </div>
+</div>

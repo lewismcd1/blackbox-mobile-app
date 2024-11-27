@@ -1,0 +1,22 @@
+<ion-header>
+
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Results</ion-title>
+  </ion-navbar>
+
+</ion-header>
+<ion-content padding>
+  <ul>
+    <li *ngFor="let element of SpikeX">
+      <b>Spike X:</b><br/>
+      Location: {{ element.location.latitude }}, {{ element.location.longitude }}, <br>Timestamp: {{ element.timestamp }}
+    </li>
+    <li *ngFor="let element of SpikeY">
+      <b>Spike Y:</b><br />
+        Location: {{ element.location.latitude }}, {{ element.location.longitude }}, <br>Timestamp:{{ element.timestamp }}
+      </li>
+  </ul>
+</ion-content>

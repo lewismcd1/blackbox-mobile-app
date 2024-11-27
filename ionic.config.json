@@ -1,0 +1,7 @@
+{
+  "name": "blackbox_app",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
